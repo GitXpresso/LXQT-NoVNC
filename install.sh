@@ -1,7 +1,7 @@
-
 #!/bin/bash
 cd ~/
-echo "not fully automatic"
+git clone https://github.com/gitxpresso/LXQT-NoVNC
+echo "not a fully automatic shell script"
 echo "Updating & Upgrading Your System"
 sudo apt update && sudo apt upgrade -y
 echo "Installing required packages"
