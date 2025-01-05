@@ -7,9 +7,10 @@ First update your linux system
 ```
 sudo apt update
 ```
-next, install the window manager for lxqt
+next, install the default window manager for lxqt
+want to install other window managers like fluxbox, awesome, icewm, and i3 then replace "openbox" below with your favourite window manager
 ```
-sudo apt install fluxbox openbox awesome i3 icewm -y
+sudo apt install openbox -y
 ```
 Next, install LXQT
 ```
