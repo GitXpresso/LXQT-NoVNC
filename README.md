@@ -187,7 +187,7 @@ clone this repository and run start.sh using the command below
 ```
 sudo apt install git -y &&
 git clone https://github.com/gitxpresso/lxqt-novnc.git &&
-cd lxqt-novnc && bash start.sh
+cd novnc && bash start.sh
 ```
 This project can made into other distros like kde, dde, mate, and other distros that made ubuntu flavours
 Just have made the other repository for the other flavours eventually there will be all in one repository,  yes the tutorial will be tested.
