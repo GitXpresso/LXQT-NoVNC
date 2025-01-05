@@ -47,7 +47,9 @@ install numpy to make novnc faster
 sudo apt install pip3-python -y
 pip install numpy -y
 ```
+
 create the contents of the xstartup file in ~/.vnc using cat
+>NOTE cst will already create the contents of the file and put the file in Directory "~/.vnc/" after you push enter after pasting the command below
 ```
 cat <<EOF > ~/.vnc/xstartup
 #!/bin/bash
