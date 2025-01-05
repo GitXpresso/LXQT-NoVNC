@@ -41,8 +41,7 @@ create a new self-signed certificate inside the noVNC folder so that you can con
 openssl req -new -x509 -days 365 -nodes -out self.pem -keyout self.pem
 ```
 >Note
->Optional
-install numpy to make novnc faster
+>Optional to install numpy to make novnc faster
 ```
 sudo apt install pip3-python -y
 pip install numpy -y
