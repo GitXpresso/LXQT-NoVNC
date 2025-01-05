@@ -1,7 +1,8 @@
 LXQT in the browser using [NoVNC](https://github.com/novnc/NoVNC/)
-
-Since LXQT is not in a docker container you can use flathub and systemctl and use .appimage files and other things you cant do in a docker container.
-# Tutorial
+Since LXQT is not in a docker container you can use flathub and systemctl and use fuse that makes running .appimage files possible and other things you cant do in a docker container.
+## Table of Contents
+* [How i made this project](#How-i-made-this-project)
+## Tutorial
 On how to run LXQT in a browser
 First update your linux system
 ```
@@ -61,4 +62,7 @@ sudo apt install git -y &&
 git clone https://github.com/gitxpresso/lxqt-novnc.git &&
 cd lxqt-novnc && bash start.sh
 ```
-This project can made into other distros like kde, dde, mate, and other distros that made ibunti flavours
+This project can made into other distros like kde, dde, mate, and other distros that made ubuntu flavours
+Just have made the other repository for the other flavours eventually there will be all in one repository,  yes the tutorial will be tested.
+## How i made this project
+that helped me with this project and yes all i had to was replaced "xfce4 and xfce4-goodies" with "lxqt" and change "startxfce" with "startlxqt" in the xstartup file, if you want to install xfce4 vnc go to this link "[Link](https://jeremypeterson.com/posts/2023-06-23-ubuntu-22-vnc/)" 
