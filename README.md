@@ -25,7 +25,7 @@ sudo apt update
 ```
 Next install the gnome packages
 ```
-sudo apt install kde -y
+sudo apt install kde-plasma-desktop -y
 ```
 Install tightvncserver 
 ```
@@ -64,7 +64,7 @@ create the contents of the xstartup file in ~/.vnc using cat
 ```
 cat <<EOF > ~/.vnc/xstartup
 #!/bin/bash
-startkde &
+startplasma-x11 &
 EOF
 ```
 clone this repository and run start.sh using the command below
