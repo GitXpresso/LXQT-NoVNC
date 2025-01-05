@@ -201,6 +201,10 @@ Finally run the start.sh file
 ```
 bash ~/start.sh
 ```
+what is looks like
+![LXQT](https://github.com/GitXpresso/Linux-NoVNC/blob/main/Screenshot%202025-01-05%20122348.png?raw=true)
+
+
 This project can made into other distros like kde, dde, mate, and other distros that made ubuntu flavours
 Just have made the other repository for the other flavours eventually there will be all in one repository,  yes the tutorial will be tested.
 ## How I made this project
