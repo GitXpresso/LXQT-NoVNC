@@ -30,6 +30,29 @@ Move to the cloned repository
 ```
 cd NoVNC
 ```
-Setup certificate in order novnc to work with https
+Install Openssl 
 ```
-
+sudo apt install openssl -y
+```
+create a new self-signed certificate inside the noVNC folder so that you can connect over HTTPS
+```
+openssl req -new -x509 -days 365 -nodes -out self.pem -keyout self.pem
+```
+>Note
+>Optional
+install numpy to make novnc faster
+```
+sudo apt install pip3-python -y
+pip install numpy -y
+```
+create the xstartup file using the script below
+```bash
+#!/bin/bash
+startlxqt &
+```
+clone this repository and run start.sh using the command below
+```
+sudo apt install git -y &&
+git clone https://github.com/gitxpresso/lxqt-novnc.git &&
+cd lxqt-novnc && bash start.sh
+```
