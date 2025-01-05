@@ -6,11 +6,11 @@ First update your linux system
 ```
 sudo apt update
 ```
-next install the window manager for lxqt
+next, install the window manager for lxqt
 ```
 sudo apt install fluxbox openbox awesome i3 icewm -y
 ```
-Next install LXQT
+Next, install LXQT
 ```
 sudo apt install lxqt -y
 ```
