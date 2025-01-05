@@ -26,7 +26,7 @@ vncserver
 ```
 move to home and clone the NoVNC repository
 ```
-cd ~/ && git clone https://github.com/novnc/NoVNC.got
+cd ~/ && git clone https://github.com/novnc/NoVNC
 ```
 Move to the cloned repository
 ```
