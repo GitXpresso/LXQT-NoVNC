@@ -1,9 +1,13 @@
 ## About 
 This project is a tutorial of how to run the linux distros below in your browser using novnc 
 ## Table of Contents
+
 * [Kde](#Kde)
- * [Kde](#Gnome)
-  * [LXQT](#LXQT)
+  
+* [Kde](#Gnome)
+  
+* [LXQT](#LXQT)
+    
 >Note the blockquoted text means I have not yet tested to be true
 
 The one with asterisk next to it mean the package is not added to latest version of ubuntu
