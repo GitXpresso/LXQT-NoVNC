@@ -1,4 +1,5 @@
 LXQT in the browser using [NoVNC](https://github.com/novnc/NoVNC/)
+
 Since LXQT is not in a docker container you can use flathub and systemctl and use .appimage files and other things you cant do in a docker container.
 # Tutorial
 On how to run LXQT in a browser
@@ -62,3 +63,4 @@ sudo apt install git -y &&
 git clone https://github.com/gitxpresso/lxqt-novnc.git &&
 cd lxqt-novnc && bash start.sh
 ```
+This project can made into other distros like kde, dde, mate, and other distros that made ibunti flavours
