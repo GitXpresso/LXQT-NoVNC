@@ -1,5 +1,5 @@
 LXQT in the browser using [NoVNC](https://github.com/novnc/NoVNC/)
-
+Since LXQT is not in a docker container you can use flathub and systemctl and use .appimage files and other things you cant do in a docker container.
 # Tutorial
 On how to run LXQT in a browser
 First update your linux system
