@@ -52,9 +52,9 @@ touch ~/.vnc/xstartup
 create the contents of the xstartup file in ~/.vnc using cat
 ```
 cat <<EOF > ~/.vnc/xstartup
-> #!/bin/bash
-> startlxqt &
-> EOF
+#!/bin/bash
+startlxqt &
+EOF
 ```
 clone this repository and run start.sh using the command below
 ```
