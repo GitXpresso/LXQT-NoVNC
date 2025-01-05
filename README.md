@@ -145,7 +145,7 @@ sudo apt update
 ```
 Next, install LXQT
 ```
-sudo apt install lxqt lubuntu-desktop -y
+sudo apt install lxqt lubuntu-desktop xscreensaver -y
 ```
 Install tightvncserver 
 ```
