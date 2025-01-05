@@ -11,6 +11,7 @@ This project is a tutorial of how to run the linux distros below in your browser
   * [Tutorial](#Tutorial)
 * [LXQT](#LXQT)
   * [Tutorial](#Tutorial)
+  * [What lxqt looks like](#what-lxqt-looks-like)
 * [How I made this project](#How-I-made-this-project)
 >Note the blockquoted text means I have not yet tested to be true
 
@@ -201,7 +202,7 @@ Finally run the start.sh file
 ```
 bash ~/start.sh
 ```
-what is looks like
+## What lxqt looks like
 ![LXQT](https://github.com/GitXpresso/Linux-NoVNC/blob/main/Screenshot%202025-01-05%20122348.png?raw=true)
 
 
