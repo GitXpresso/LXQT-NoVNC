@@ -64,7 +64,7 @@ create the contents of the xstartup file in ~/.vnc using cat
 ```
 cat <<EOF > ~/.vnc/xstartup
 #!/bin/bash
-startlxqt &
+startkde &
 EOF
 ```
 clone this repository and run start.sh using the command below
@@ -122,7 +122,7 @@ create the contents of the xstartup file in ~/.vnc using cat
 ```
 cat <<EOF > ~/.vnc/xstartup
 #!/bin/bash
-startlxqt &
+gnome-session &
 EOF
 ```
 clone this repository and run start.sh using the command below
