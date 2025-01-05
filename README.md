@@ -50,13 +50,11 @@ Creating the xstartup file using touch
 touch ~/.vnc/xstartup
 ```
 create the contents of the xstartup file in ~/.vnc using cat
-using the script below
+```
 cat <<EOF > ~/.vnc/xstartup
 > #!/bin/bash
 > startlxqt &
 > EOF
-```bash
-
 ```
 clone this repository and run start.sh using the command below
 ```
