@@ -144,7 +144,7 @@ sudo apt update
 ```
 Next, install LXQT
 ```
-sudo apt install lxqt -y
+sudo apt install lxqt lubuntu-desktop -y
 ```
 Install tightvncserver 
 ```
@@ -154,29 +154,6 @@ Setup vncpassword by putting the following command below
 ```
 vncserver
 ```
-move to home and clone the NoVNC repository
-```
-cd ~/ && git clone https://github.com/novnc/NoVNC
-```
-Move to the cloned repository
-```
-cd NoVNC
-```
-Install Openssl 
-```
-sudo apt install openssl -y
-```
-create a new self-signed certificate inside the noVNC folder so that you can connect over HTTPS
-```
-openssl req -new -x509 -days 365 -nodes -out self.pem -keyout self.pem
-```
->Note
->Optional to install numpy to make novnc faster
-```
-sudo apt install pip3-python -y
-pip install numpy -y
-```
-
 create the contents of the xstartup file in ~/.vnc using cat
 >NOTE cat will already create the contents of the file and put the file in Directory "~/.vnc/" after you push enter after pasting the command below
 ```
@@ -185,11 +162,44 @@ cat <<EOF > ~/.vnc/xstartup
 startlxqt &
 EOF
 ```
+move to home and clone the NoVNC repository
+cd ~/
+git clone https://github.com/novnc/noVNC.git
+Move to the cloned repository
+```
+cd NoVNC
+```
+Install Openssl 
+```
+sudo apt install openssl -y
+```
+moved to Novnc cloned repository to create a new self-signed certificate inside the noVNC folder so that you can connect over HTTPS
+```
+cd noVNC
+openssl req -new -x509 -days 365 -nodes -out self.pem -keyout self.pem
+```
+
+>Note
+>Optional to install numpy to make novnc faster
+```
+sudo apt install pip3-python -y
+pip install numpy -y
+```
+
 clone this repository and run start.sh using the command below
 ```
-sudo apt install git -y &&
-git clone https://github.com/gitxpresso/lxqt-novnc.git &&
-cd novnc && bash start.sh
+cat <<EOF > ~/start.sh
+#!/bin/bash
+IP=$(curl -s http://169.254.169.254/latest/meta-data/public-ipv4)
+echo "Connect with https://$IP:8443/vnc.html?host=$IP&port=8443"
+vncserver :1
+~/noVNC/utils/novnc_proxy --vnc localhost:5901 --listen 8443
+vncserver -kill :1
+EOF
+```
+Finally run the start.sh file
+```
+bash ~/start.sh
 ```
 This project can made into other distros like kde, dde, mate, and other distros that made ubuntu flavours
 Just have made the other repository for the other flavours eventually there will be all in one repository,  yes the tutorial will be tested.
