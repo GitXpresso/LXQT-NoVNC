@@ -1,16 +1,19 @@
 ## About 
-This project is a tutorial of how to run the linux distros below in your browser using novnc 
+This project is a tutorial of how to run the linux distros below in your browser using novnc,
+
+**_The one with asterisk next to it in the table of contents mean the package is not added to latest version of ubuntu_**
+
 ## Table of Contents
 
 * [Kde](#Kde)
-  
-* [Kde](#Gnome)
-  
+  * [Tutorial](#Tutorial)
+* [Gnome](#Gnome)
+  * [Tutorial](#Tutorial)
 * [LXQT](#LXQT)
-    
+  * [Tutorial](#Tutorial)
+* [How I made this project](#How-I-made-this-project)
 >Note the blockquoted text means I have not yet tested to be true
 
-The one with asterisk next to it mean the package is not added to latest version of ubuntu
 
 Since the linux distros are not in a docker container you can use flathub and `systemctl` and use fuse that makes running .appimage files possible and other things you can't do in a docker container.
 # Kde
@@ -195,5 +198,5 @@ cd novnc && bash start.sh
 ```
 This project can made into other distros like kde, dde, mate, and other distros that made ubuntu flavours
 Just have made the other repository for the other flavours eventually there will be all in one repository,  yes the tutorial will be tested.
-## How i made this project
+## How I made this project
 that helped me with this project and yes all i had to was replaced "xfce4 and xfce4-goodies" with "lxqt" and change "startxfce" with "startlxqt" in the xstartup file, if you want to install xfce4 vnc go to this link "[Link](https://jeremypeterson.com/posts/2023-06-23-ubuntu-22-vnc/)" 
