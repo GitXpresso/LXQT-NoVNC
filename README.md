@@ -1,3 +1,4 @@
+**`Why was this project archived and abandoned so fast because lxqt had errors when i run lxqt in the browser using Google cloud shell it had errors with lxqt-panel and other things that make lxqt function properly*`**
 ## About 
 This project is a tutorial of how to run the linux distros below in your browser using novnc,
 
