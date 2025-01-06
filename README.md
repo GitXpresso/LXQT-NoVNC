@@ -1,4 +1,7 @@
-**`Why was this project archived and abandoned so fast because lxqt had errors when i run lxqt in the browser using Google cloud shell it had errors with lxqt-panel and other things that make lxqt function properly, and half of the other flavours like gnome which couldnt run because google cloud shell didnt have systemd and kde had errors like lxqt and after those errors it showed only white and black pixels and thats why only lxde and lxqt is left`**
+**`Why was this project archived and abandoned so fast because lxqt had errors when i run lxqt in the browser using Google cloud shell it had errors with lxqt-panel and other things that make lxqt function properly, and half of the other flavours like gnome which couldnt run because google cloud shell didnt have systemd and kde had errors like lxqt and after those errors it showed only white and black pixels and thats why only lxde and lxqt is left, as you see the image below shows what lxqt looks like using novnc, lxqt has no panel on the bottom of the image`**
+## What lxqt looks like
+![LXQT](https://github.com/GitXpresso/Linux-NoVNC/blob/main/Screenshot%202025-01-05%20122348.png?raw=true)
+
 ## About 
 This project is a tutorial of how to run the linux distros below in your browser using novnc,
 
@@ -10,7 +13,6 @@ This project is a tutorial of how to run the linux distros below in your browser
   * [Tutorial](#Tutorial)
 * [LXQT](#LXQT)
   * [Tutorial](#Tutorial)
-  * [What lxqt looks like](#what-lxqt-looks-like)
 * [How I made this project](#How-I-made-this-project)
 **`Why was this project archived and abandoned so fast because lxqt had errors when i run lxqt in the browser using Google cloud shell it had errors with lxqt-panel and other things that make lxqt function properly, and half pf the other flavours like gnome which couldnt run because google cloud shell didnt have systemd and kde had errors like lxqt and after those errors it showed only white and black pixels, running .
 ## About 
@@ -153,8 +155,7 @@ Finally run the start.sh file
 ```
 bash ~/start.sh
 ```
-## What lxqt looks like
-![LXQT](https://github.com/GitXpresso/Linux-NoVNC/blob/main/Screenshot%202025-01-05%20122348.png?raw=true)
+
 
 
 This project can made into other distros like kde, dde, mate, and other distros that made ubuntu flavours
