@@ -88,6 +88,23 @@ tasksel: apt-get failed (255)
 ```bash
 sudo dpkg --configure -a
 ```
+### Did you get a debconf error with tasksel that looks like this heres how to fix it
+```bash
+debconf: DbDriver "config": /var/cache debconf/config.dat is locked by another process: Resource temporarily unavailable
+```
+### first put this command below in your terminal
+```bash
+sudo fuser -v /var/cache/debconf/config.dat
+```
+### output example
+                     USER        PID ACCESS COMMAND
+
+/var/cache/debconf/config.dat:
+                    root      5787 F.... dpkg-preconfigu
+### kill the process showed when putting the command upove in your termial
+```bash
+sudo kill -9 5787
+```
 ### If all the answers to fix the errors dont work then install lxqt and lubuntu desktop manually
 ```bash
 sudo apt install -y lxqt lubuntu-desktop
