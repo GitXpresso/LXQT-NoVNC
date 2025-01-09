@@ -105,6 +105,10 @@ sudo fuser -v /var/cache/debconf/config.dat
 ```bash
 sudo kill -9 5787
 ```
+### Answer upove does not work then do this instead
+```bash
+sudo rm /var/cache/debconf/*.dat 
+```
 ### If all the answers to fix the errors dont work then install lxqt and lubuntu desktop manually
 ```bash
 sudo apt install -y lxqt lubuntu-desktop
