@@ -148,3 +148,6 @@ There is only one alternative in link group x-session-manager (providing /usr/bi
 Nothing to configure.
 ```
 then just create a xstartup file from [line 32](#-create-the-xstartup-file-using-cat-here-document)
+## How I made this project
+I made this project from the links in linksandcredits.txt file 
+I copied the steps and edited them to run lxqt in the browser, part of the x11vnc I did by myself and some of it I got from the web
