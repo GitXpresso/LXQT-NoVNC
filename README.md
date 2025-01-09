@@ -84,6 +84,8 @@ websockify -D --web=/usr/share/novnc/ --cert=/home/ubuntu/novnc.pem 6890 localho
 ```
 #### put 192.168.86.5 in your vnc client
 #### when it says "session time out" dont worry you wont be disconnected
+# What is Looks Like
+![Screenshot 2025-01-09 11.42.45 AM.png](<https://media-hosting.imagekit.io//eea7051247d9434e/Screenshot%202025-01-09%2011.42.45%20AM.png?Expires=1831049017&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=UfYNkQG1H~dBfUE9W6D89Yi-LlpgBTkD2BF6Pr6l4iUXYyid3nByOt55CC1yCxbK0HpqcW69P9Sco1wFbdvRyRyQGtS8va0G9bfRSNXAgcqgU7BPws0-ukHDvUU9r5yYXCjpZaIOSlaR0fVmhGbBTdGCaUZlgYmdlvpm8W3A39dYvFdS5Y5MZE1JQlalOMM~FkdxHpHfPvx02aRD326BEmWWAm5mIk5diW8qaBuTHHD0QnCwfkCBSxN7Z70ppOBNJeNT9cZ4-FIe6YJsEB2Nd08IsK6QwSd9s3YXBN6~UHZbcrf4D7J8yHWjE3Rq5WPdpFien2QZFlW3UhDfgt513Q__>)
 *there is no repository that i found that runs x11vnc in a novnc web client using websockify and tigervnc*
 This project was unarchived because tasksel works with the lxqt-panel works and other system settings for lxqt to work properly.
 the other way to run latest version of lxqt in the browser wasnt working.
