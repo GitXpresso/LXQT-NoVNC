@@ -82,9 +82,10 @@ vncserver -SecurityTypes none  --I-KNOW-THIS-IS-INSECURE  -localhost no :0
 ```
 websockify -D --web=/usr/share/novnc/ --cert=/home/ubuntu/novnc.pem 6890 localhost:5900
 ```
+#### To have novnc automatically resize lxqt to fix your screen click the gear icon and change scaling mode to resize
 #### put 192.168.86.5 in your vnc client
 #### when it says "session time out" dont worry you wont be disconnected
-# What is Looks Like
+# What X11vnc LXQT Looks Like
 ![Screenshot 2025-01-09 2.15.25 PM.png](<https://media-hosting.imagekit.io//f6f47ea67be74e99/Screenshot%202025-01-09%202.15.25%20PM.png?Expires=1831058435&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=AswGv~irwiH6Myz3UXzVEZLwjC48C7~YLnxB87-D1EwLI5I08blNDFE6PFSPtYoAslsJ687c-~j4lTNGkfkpRDmPQx2om-9roqwQD4FmE8W4xjCvttKPTFz2XeMTXRNkrPA88Gz7tmWwECEmOyUZmucXHkzSR9MMOhKC2UCgrjS3KQR75INZMibV9n6QRZvktGLpRYExnIdqvNkUToxpF2CRvEUZs4bB066qqKCgRlIPqg4EOibnL3t8X8dSr0p3sJ1MRVffl6X6obXYGGLrNRUSKulZoJGHiPL5ThQfZv1CBeml21A5phbUdlciEwca28PFemMQA27jJrMQobhK6g__>)
 *there is no repository that i found that runs x11vnc in a novnc web client using websockify and tigervnc*
 This project was unarchived because tasksel works with the lxqt-panel works and other system settings for lxqt to work properly.
