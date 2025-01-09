@@ -64,11 +64,11 @@ sudo apt update
 ```
 ### install X11vnc Xvfb Openbox Websockiy and Novnc
 ```bash
-sudo apt install x11vnc xvfb openbox websockify novnc -y
+sudo apt install lxqt x11vnc xvfb openbox websockify novnc dialog -y
 ```
 ### setup vnc server
 ```bash
-ssh -L 5900:localhost:5900 192.168.86.5 "x11vnc -create -env FD_PROG=/usr/bin/startlxqt -env X11VNC_CREATE_GEOM=${1:-1024x768x16} -nopw -listen 127.0.0.1 -forever"
+ssh -L 5900:localhost:5900 192.168.86.5 "x11vnc -create -env FD_PROG=/usr/bin/startlxqt -nopw -listen 127.0.0.1 -forever"
 ```
 ### install tigervnc
 ```
@@ -76,11 +76,11 @@ sudo apt install tigervnc-standalone-server tigervnc-viewer -y
 ```
 ## setup the vncserver
 ```
-vncserver -localhost no :0
+vncserver -localhost no :5
 ```
 ### start the server using websockify 
 ```
-websockify -D --web=/usr/share/novnc/ --cert=/home/ubuntu/novnc.pem 6080 localhost:5900
+websockify -D --web=/usr/share/novnc/ --cert=/home/ubuntu/novnc.pem 6890 localhost:5901
 ```
 #### when it says "session time out" dont worry you wont be disconnected
 *there is no repository that i found that runs x11vnc in a novnc web client using websockify and tigervnc*
