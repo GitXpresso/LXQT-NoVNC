@@ -82,7 +82,8 @@ vncserver -SecurityTypes none  --I-KNOW-THIS-IS-INSECURE  -localhost no :0
 ```
 websockify -D --web=/usr/share/novnc/ --cert=/home/ubuntu/novnc.pem 6890 localhost:5900
 ```
-#### To have novnc automatically resize lxqt to fix your screen click the gear icon and change scaling mode to resize
+#### To have novnc automatically resize lxqt to fix your screen click the gear icon and change scaling mode to Remote Resizing
+
 #### put 192.168.86.5 in your vnc client
 #### when it says "session time out" dont worry you wont be disconnected
 # What X11vnc LXQT Looks Like
