@@ -50,3 +50,7 @@ the other way to run latest version of lxqt in the browser wasnt working.
 ***if you dont have systemctl and other things that require dbus to work properly then it wont also work in lxqt novnc either.***
 
 gnome will not work if systemctl dbus is not working
+## start the novnc server
+``` 
+bash ~/Linux-NoVNC/launch.sh --vnc 192.168.1.10:5900
+```
