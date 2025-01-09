@@ -41,11 +41,15 @@ EOF
 ```
 ### start a new vnc session
 ```bash
-vncserver -localhost no :1
+sudo vncserver -localhost no :3
 ```
 ### run lxqt
 ```bash
 xtigervncviewer vncserver:5901
+```
+### if command upove does not work then do the command below
+```bash
+tigervncserver -xstartup /usr/bin/startlxqt -geometry 800x600 -localhost no :1
 ```
 ### run novnc web client using websockify, the display is :1
 ```bash
