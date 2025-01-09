@@ -82,6 +82,7 @@ vncserver -SecurityTypes none  --I-KNOW-THIS-IS-INSECURE  -localhost no :0
 ```
 websockify -D --web=/usr/share/novnc/ --cert=/home/ubuntu/novnc.pem 6890 localhost:5900
 ```
+#### put 192.168.86.5 in your vnc client
 #### when it says "session time out" dont worry you wont be disconnected
 *there is no repository that i found that runs x11vnc in a novnc web client using websockify and tigervnc*
 This project was unarchived because tasksel works with the lxqt-panel works and other system settings for lxqt to work properly.
