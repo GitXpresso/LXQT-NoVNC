@@ -62,7 +62,7 @@ go to `https://localhost:5901` novnc
 ```bash
 sudo apt update
 ```
-### install X11vnc Xvfb Openbox Websockiy and Novnc
+### install X11vnc Xvfb Openbox Websockify Lxqt Dialog and Novnc
 ```bash
 sudo apt install lxqt x11vnc xvfb openbox websockify novnc dialog -y
 ```
@@ -80,7 +80,7 @@ vncserver -localhost no :5
 ```
 ### start the server using websockify 
 ```
-websockify -D --web=/usr/share/novnc/ --cert=/home/ubuntu/novnc.pem 6890 localhost:5901
+websockify -D --web=/usr/share/novnc/ --cert=/home/ubuntu/novnc.pem 6890 localhost:5900
 ```
 #### when it says "session time out" dont worry you wont be disconnected
 *there is no repository that i found that runs x11vnc in a novnc web client using websockify and tigervnc*
