@@ -64,11 +64,11 @@ sudo apt update
 ```
 ### install X11vnc Xvfb and Fluxbox
 ```bash
-sudo apt install x11vnc xvfb fluxbox 
+sudo apt install x11vnc xvfb fluxbox -y
 ```
-### creating passwd using x11vnc
+### setup vnc server
 ```bash
-x11vnc -storepasswd 
+ssh -L 5900:localhost:5900 192.168.86.5 "x11vnc -create -env FD_PROG=/usr/bin/fluxbox -env X11VNC_CREATE_GEOM=${1:-1024x768x16} -nopw -listen 127.0.0.1 -forever"
 ```
 ### start the x11vnc headless server
 ```bash
