@@ -21,10 +21,6 @@ sudo tasksel
 ```bash
 sudo update-alternatives --config x-session-manager
 ```
-### get a apt-get error with tasksel do this
-```bash
-sudo dpkg --configure -a
-```
 ### install vnc server(tigervnc)
 ```bash
 sudo apt install tigervnc-standalone-server tigervncviewer -y 
