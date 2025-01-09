@@ -36,6 +36,10 @@ cat << EOF > ~/.vnc/xstartup
 startlxqt &
 EOF
 ```
+### start a new vnc session
+```bash
+vncserver -localhost no :1
+```
 ### run lxqt
 ```bash
 xtigervncviewer vncserver:5901
