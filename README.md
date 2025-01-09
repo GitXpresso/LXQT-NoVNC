@@ -68,7 +68,7 @@ sudo apt install x11vnc xvfb openbox websockify novnc -y
 ```
 ### setup vnc server
 ```bash
-ssh -L 5900:localhost:5900 192.168.86.5 "x11vnc -create -env FD_PROG=/usr/bin/openbox -env X11VNC_CREATE_GEOM=${1:-1024x768x16} -nopw -listen 127.0.0.1 -forever"
+ssh -L 5900:localhost:5900 192.168.86.5 "x11vnc -create -env FD_PROG=/usr/bin/startlxqt -env X11VNC_CREATE_GEOM=${1:-1024x768x16} -nopw -listen 127.0.0.1 -forever"
 ```
 ### install tigervnc
 ```
