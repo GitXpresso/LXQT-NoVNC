@@ -29,7 +29,7 @@ sudo apt install tigervnc-standalone-server tigervncviewer -y
 ```bash
 openssl req -x509 -nodes -newkey rsa:3072 -keyout novnc.pem -out novnc.pem -days 3650
 ```
-### create the xstartup file usig cat here document
+### create the xstartup file using cat here document
 ```bash
 cat << EOF > ~/.vnc/xstartup
 #!/bin/bash
@@ -124,3 +124,9 @@ sudo rm /var/cache/debconf/*.dat
 ```bash
 sudo apt install -y lxqt lubuntu-desktop
 ```
+### did you get this error when running `sudo update-alternatives --config x-session-manager`
+```bash
+There is only one alternative in link group x-session-manager (providing /usr/bin/x-session-manager): /usr/bin/startlxqt
+Nothing to configure.
+```
+then just create a xstartup file from [line 32](#-create-the-xstartup-file-using-cat-here-document)
