@@ -1,5 +1,5 @@
 
-## Running Novnc LXQT
+## Running Novnc LXQT using Tasksel
 *Using tasksel to run lxqt in a browser since the other way wasnt working* 
 look at the commit history of the readme.md to see the other way to run lxqt in the browser
 ```
