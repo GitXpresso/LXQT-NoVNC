@@ -76,7 +76,7 @@ sudo apt install tigervnc-standalone-server tigervnc-viewer -y
 ```
 ## setup the vncserver
 ```
-vncserver -localhost no :5
+vncserver -SecurityTypes none  --I-KNOW-THIS-IS-INSECURE  -localhost no :0
 ```
 ### start the server using websockify 
 ```
