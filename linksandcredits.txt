@@ -1,0 +1,3 @@
+https://linuxize.com/post/how-to-install-and-configure-vnc-on-ubuntu-20-04/ X11VNC
+https://linuxconfig.org/vnc-server-on-ubuntu-20-04-focal-fossa-linux # Tasksel
+https://www.server-world.info/en/note?os=Ubuntu_22.04&p=desktop&f=8 # Websockify Setup
