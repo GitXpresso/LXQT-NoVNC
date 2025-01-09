@@ -23,7 +23,7 @@ sudo update-alternatives --config x-session-manager
 ```
 ### install vnc server(tigervnc)
 ```bash
-sudo apt install tigervnc-standalone-server tigervncviewer -y 
+sudo apt install tigervnc-standalone-server tigervnc-viewer -y 
 ```
 ### next setup novnc configuration using openssl
 ```bash
