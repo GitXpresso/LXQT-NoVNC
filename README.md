@@ -27,6 +27,9 @@ sudo apt install tigervnc-standalone-server tigervnc-viewer -y
 ```
 ### next setup novnc configuration using openssl
 ```bash
+cd ~/
+git clone https://github.com/Novnc/Novnc
+cd Novnc
 openssl req -x509 -nodes -newkey rsa:3072 -keyout novnc.pem -out novnc.pem -days 3650
 ```
 ### create the xstartup file using cat here document
