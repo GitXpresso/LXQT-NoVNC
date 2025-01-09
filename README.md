@@ -62,22 +62,25 @@ go to `https://localhost:5901` novnc
 ```bash
 sudo apt update
 ```
-### install X11vnc Xvfb and Fluxbox
+### install X11vnc Xvfb Openbox Websockiy and Novnc
 ```bash
-sudo apt install x11vnc xvfb fluxbox -y
+sudo apt install x11vnc xvfb openbox websockify novnc -y
 ```
 ### setup vnc server
 ```bash
-ssh -L 5900:localhost:5900 192.168.86.5 "x11vnc -create -env FD_PROG=/usr/bin/fluxbox -env X11VNC_CREATE_GEOM=${1:-1024x768x16} -nopw -listen 127.0.0.1 -forever"
+ssh -L 5900:localhost:5900 192.168.86.5 "x11vnc -create -env FD_PROG=/usr/bin/openbox -env X11VNC_CREATE_GEOM=${1:-1024x768x16} -nopw -listen 127.0.0.1 -forever"
 ```
-### want to have a password for x11vnc then replace `-nopw` with `-usepw`
-### and create a password using the command below then setup vnc server
-```bash
-x11vnc -storepasswd 
+### install tigervnc
 ```
-### start the x11vnc headless server
-```bash
-x11vnc -usepw -display :1 
+sudo apt install tigervnc-standalone-server tigervnc-viewer -y 
+```
+## setup the vncserver
+```
+vncserver -localhost no :0
+```
+### start the server using websockify 
+```
+websockify -D --web=/usr/share/novnc/ --cert=/home/ubuntu/novnc.pem 6080 localhost:5901
 ```
 This project was unarchived because tasksel works with the lxqt-panel works and other system settings for lxqt to work properly.
 the other way to run latest version of lxqt in the browser wasnt working.
