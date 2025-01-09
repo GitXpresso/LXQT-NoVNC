@@ -92,12 +92,23 @@ websockify -D --web=/usr/share/novnc/ --cert=/home/ubuntu/novnc.pem 6890 localho
 This project was unarchived because tasksel works with the lxqt-panel works and other system settings for lxqt to work properly.
 the other way to run latest version of lxqt in the browser wasnt working.
 ***if you dont have systemctl and other things that require dbus to work properly then it wont also work in lxqt novnc either.***
-
-gnome will not work if systemctl dbus is not working
-## start the novnc server
-``` 
-bash ~/Linux-NoVNC/launch.sh --vnc 192.168.1.10:5900
+# Run LXQT using Xpra
+### Install Xpra LXQT Openbox Websockify and Novnc
+```bash
+sudo apt install xpra lxqt openbox websockify novnc -y
 ```
+### create the required directories
+```bash
+mkdir -p ~/.xdg
+mkdir -p ~/.Xauthority
+```
+### run the xpra server
+```bash
+xpra start --no-daemon --bind-tcp=0.0.0.0:8989 -dbus-launch=no --start=startlxqt --socket-dir=$XDG_RUNTIME_DIR
+```
+# What Xpra LXQT Looks like
+![2025-01-09.png](<https://media-hosting.imagekit.io//fef27670cb0d41ed/2025-01-09.png?Expires=1831067284&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=vTwDCXSCmRcSLmaiGwmXrMX~~Bm1TLl5jHSBPhrVsshV82wu5-CFpvQpt53wttloaLeIv6qpoe2yahefzojFu7OkKHAPJD0lEMMSEJ14OMbo9oZcEAXpVC9~lzUKrO3q80JKxNmWllwx-icvNHrzIp2orfVoMcadM7LySqxaoSszAF4X-o2E5JXxt7QPEydPCP~vLlE094-UKdiDZJCYWSpzxSbzeLETa99FXJi1bxyETxZbmOtwjAxSxyeH2Jic8P150V03jOQemgqUUgQrDKwpaR5Gtg4~sTDjdAKP7K6FBOuyUEZdeLoSzZZKKIi9FhW0~OhqsCFtKAfcrd2CxQ__>)
+
 # Using Dialog Tutorial
 To move in dialog, use the up and down arrow keys
 To Select A Option in Dialog press space
