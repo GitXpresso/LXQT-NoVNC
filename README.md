@@ -70,6 +70,11 @@ sudo apt install x11vnc xvfb fluxbox -y
 ```bash
 ssh -L 5900:localhost:5900 192.168.86.5 "x11vnc -create -env FD_PROG=/usr/bin/fluxbox -env X11VNC_CREATE_GEOM=${1:-1024x768x16} -nopw -listen 127.0.0.1 -forever"
 ```
+### want to have a password for x11vnc then replace `-nopw` with `-usepw`
+### and create a password using the command below then setup vnc server
+```bash
+x11vnc -storepasswd 
+```
 ### start the x11vnc headless server
 ```bash
 x11vnc -usepw -display :1 
