@@ -29,6 +29,13 @@ sudo apt install tigervnc-standalone-server tigervncviewer -y
 ```bash
 openssl req -x509 -nodes -newkey rsa:3072 -keyout novnc.pem -out novnc.pem -days 3650
 ```
+### create the xstartup file usig cat here document
+```bash
+cat << EOF > ~/.vnc/xstartup
+#!/bin/bash
+startlxqt &
+EOF
+```
 ### run lxqt
 ```bash
 xtigervncviewer vncserver:5901
