@@ -2,27 +2,42 @@
 ## Running Novnc LXQT using Tasksel
 *Using tasksel to run lxqt in a browser since the other way wasnt working* 
 look at the commit history of the readme.md to see the other way to run lxqt in the browser
+### Update the System
+```bash
+sudo apt update
 ```
-sudo apt install tasksel novnc python3-websockify python3-numpy openssl dialog whiptail -y
+### install require packages
+```bash
+sudo apt install tasksel novnc python3-websockify python3-numpy openssl dialog -y
 ```
-### next run tasksel 
+### next run tasksel, to know how to move and select in dialog heres a [tutorial](#Using-Dialog-Tutorial)
 ```bash
 sudo tasksel
+```
+### Selecting LXQT looks like this
+![Screenshot 2025-01-09 11.42.45 AM.png](<https://media-hosting.imagekit.io//eea7051247d9434e/Screenshot%202025-01-09%2011.42.45%20AM.png?Expires=1831049017&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=UfYNkQG1H~dBfUE9W6D89Yi-LlpgBTkD2BF6Pr6l4iUXYyid3nByOt55CC1yCxbK0HpqcW69P9Sco1wFbdvRyRyQGtS8va0G9bfRSNXAgcqgU7BPws0-ukHDvUU9r5yYXCjpZaIOSlaR0fVmhGbBTdGCaUZlgYmdlvpm8W3A39dYvFdS5Y5MZE1JQlalOMM~FkdxHpHfPvx02aRD326BEmWWAm5mIk5diW8qaBuTHHD0QnCwfkCBSxN7Z70ppOBNJeNT9cZ4-FIe6YJsEB2Nd08IsK6QwSd9s3YXBN6~UHZbcrf4D7J8yHWjE3Rq5WPdpFien2QZFlW3UhDfgt513Q__>)
+### if you have any errors with tasksel go this anchor link: [Tasksel Errors][#Tasksel-Errors]
+### set the Default X-Session, Type 0 as the default
+```bash
+sudo update-alternatives --config x-session-manager
 ```
 ### get a apt-get error with tasksel do this
 ```bash
 sudo dpkg --configure -a
 ```
-install tigervnc packages
-``` 
+### install vnc server(tigervnc)
+```bash
 sudo apt install tigervnc-standalone-server tigervncviewer -y 
 ```
 ### next setup novnc configuration using openssl
 ```bash
 openssl req -x509 -nodes -newkey rsa:3072 -keyout novnc.pem -out novnc.pem -days 3650
 ```
-
-### then run the novnc server, the display is :1
+### run lxqt
+```bash
+xtigervncviewer vncserver:5901
+```
+### run novnc web client using websockify, the display is :1
 ```bash
 websockify -D --web=/usr/share/novnc/ --cert=/home/ubuntu/novnc.pem 6080 localhost:5901
 ```
@@ -53,4 +68,31 @@ gnome will not work if systemctl dbus is not working
 ## start the novnc server
 ``` 
 bash ~/Linux-NoVNC/launch.sh --vnc 192.168.1.10:5900
+```
+# Using Dialog Tutorial
+To move in dialog, use the up and down arrow keys
+To Select A Option in Dialog press space
+After selecting 1 or more options in Dialog Press Enter
+# Tasksel Errors
+## Errors with tasksel and How to fix them
+### Did you get this error while installing lxqt using tasksel
+```bash
+Use of uninitialized value $ret[0] in string eq at /usr/bin/debconf-apt-progress line 173 <STDIN> line 4.
+tasksel: apt-get failed (255)
+```
+### Heres how to fix the error upove by putting the follow command below in your termial
+```bash
+sudo apt-get install lubuntu-desktop^
+```
+### Did you get this error, if you did then heres how to fix it
+```bash
+tasksel: apt-get failed (255) 
+```
+### To fix the error upove, type this in your terminal
+```bash
+sudo dpkg --configure -a
+```
+### If all the answers to fix the errors dont work then install lxqt and lubuntu desktop manually
+```bash
+sudo apt install lxqt lubuntu-desktop -y
 ```
