@@ -57,20 +57,20 @@ websockify -D --web=/usr/share/novnc/ --cert=/home/ubuntu/novnc.pem 6080 localho
 ```
 go to `https://localhost:5901` novnc
 
-# Running Lxqt using X11VNC
+# Running Lxqt using X11VNC Headless
 ### Updating your system
 ```bash
 sudo apt update
 ```
-### installing X11vnc
+### install X11vnc Xvfb and Fluxbox
 ```bash
-sudo apt-get install x11vnc 
+sudo apt install x11vnc xvfb fluxbox 
 ```
 ### creating passwd using x11vnc
 ```bash
 x11vnc -storepasswd 
 ```
-### start the x11vnc server
+### start the x11vnc headless server
 ```bash
 x11vnc -usepw -display :1 
 ```
