@@ -82,6 +82,7 @@ vncserver -localhost no :0
 ```
 websockify -D --web=/usr/share/novnc/ --cert=/home/ubuntu/novnc.pem 6080 localhost:5901
 ```
+#### when it says "session time out" dont worry you wont be disconnected
 This project was unarchived because tasksel works with the lxqt-panel works and other system settings for lxqt to work properly.
 the other way to run latest version of lxqt in the browser wasnt working.
 ***if you dont have systemctl and other things that require dbus to work properly then it wont also work in lxqt novnc either.***
