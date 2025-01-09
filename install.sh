@@ -16,3 +16,6 @@ echo "make sure your terminal is tall and wide, or just tall in order for dialog
 echo -e "${BWhite}if you get an apt-get error with tasksel"
 echo -e "${BYellow}starting tasksel"
 sudo tasksel
+echo "did you get this error?"
+echo "debconf: DbDriver "config": /var/cache/debconf/config.dat is locked by another process: Resource temporarily unavailable
+tasksel: debconf failed to run"
