@@ -41,7 +41,7 @@ EOF
 ```
 ### start a new vnc session
 ```bash
-sudo vncserver -localhost no :3
+sudo vncserver -localhost no :1
 ```
 ### run lxqt
 ```bash
