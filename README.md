@@ -93,8 +93,7 @@ the other way to run latest version of lxqt in the browser wasnt working.
 ***if you dont have systemctl and other things that require dbus to work properly then it wont also work in lxqt novnc either.***
 # Run LXQT using Xpra
 ### Install Xpra LXQT Openbox Websockify and Novnc
-```bashxpra start --no-daemon --bind-tcp=0.0.0.0:8989 -dbus-launch=no --start=cinnamon-session --socket-dir=~/.Xauthority
-
+```bash
 sudo apt install xpra lxqt openbox websockify novnc -y
 ```
 ### create the required directories
@@ -104,7 +103,7 @@ mkdir -p ~/.Xauthority
 ```
 ### run the xpra server
 ```bash
-xpra start --no-daemon --bind-tcp=0.0.0.0:8989 -dbus-launch=no --start=startlxqt --socket-dir=~/.Xauthority
+xpra start --no-daemon --bind-tcp=0.0.0.0:8989 -dbus-launch=no --start=startlxqt --socket-dir=~/.xdg
 ```
 # What Xpra LXQT Looks like
 ![2025-01-09.png](<https://media-hosting.imagekit.io//fef27670cb0d41ed/2025-01-09.png?Expires=1831067284&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=vTwDCXSCmRcSLmaiGwmXrMX~~Bm1TLl5jHSBPhrVsshV82wu5-CFpvQpt53wttloaLeIv6qpoe2yahefzojFu7OkKHAPJD0lEMMSEJ14OMbo9oZcEAXpVC9~lzUKrO3q80JKxNmWllwx-icvNHrzIp2orfVoMcadM7LySqxaoSszAF4X-o2E5JXxt7QPEydPCP~vLlE094-UKdiDZJCYWSpzxSbzeLETa99FXJi1bxyETxZbmOtwjAxSxyeH2Jic8P150V03jOQemgqUUgQrDKwpaR5Gtg4~sTDjdAKP7K6FBOuyUEZdeLoSzZZKKIi9FhW0~OhqsCFtKAfcrd2CxQ__>)
