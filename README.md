@@ -10,25 +10,7 @@ cd ~/
 openssl req -x509 -nodes -newkey rsa:3072 -keyout novnc.pem -out novnc.pem -days 3650
 ```
 ### start the server
-```bash
-vncserver :1
 ```
-run the Novnc webclient using websockify
-```bash
-websockify -D --web=/usr/share/novnc/ --cert=/home/ubuntu/novnc.pem 6080 localhost:5901
-```
-## running NoVNC Kubuntu-Desktop using vnc client tightvncserver
-### Update and Install kubuntu-desktop and tightvncserver novnc python3-websockify python3-numpy and openssl
-```bash
-sudo apt-get update && sudo apt-get install -y kubuntu-desktop tightvncserver novnc python3-websockify python3-numpy openssl
-```
-### Create Novnc.pem using openssl
-```bash
-cd ~/
-openssl req -x509 -nodes -newkey rsa:3072 -keyout novnc.pem -out novnc.pem -days 3650
-```
-### start the server
-```bash
 vncserver :1
 ```
 run the Novnc webclient using websockify
@@ -102,9 +84,6 @@ sudo apt update
 ```bash
 sudo apt install lxqt x11vnc xvfb openbox websockify novnc dialog -y
 ```
-### setup vnc server
-```bash
-sudo kill -9 $(sudo lsof -t -i:8000)```
 ### install tigervnc
 ```
 sudo apt install tigervnc-standalone-server tigervnc-viewer -y 
