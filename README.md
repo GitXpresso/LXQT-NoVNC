@@ -1,4 +1,22 @@
 
+## running NoVNC Lubuntu-Desktop using vnc client tightvncserver
+### Update and Install lubuntu-desktop and tightvncserver novnc python3-websockify python3-numpy and openssl
+```bash
+sudo apt-get update && sudo apt-get install -y lubuntu-desktop tightvncserver novnc python3-websockify python3-numpy openssl
+```
+### Create Novnc.pem using openssl
+```bash
+cd ~/
+openssl req -x509 -nodes -newkey rsa:3072 -keyout novnc.pem -out novnc.pem -days 3650
+```
+### start the server
+```bash
+vncserver :1
+```
+run the Novnc webclient using websockify
+```bash
+websockify -D --web=/usr/share/novnc/ --cert=/home/ubuntu/novnc.pem 6080 localhost:5901
+```
 ## Running Novnc LXQT using Tasksel
 *Using tasksel to run lxqt in a browser since the other way wasnt working* 
 look at the commit history of the readme.md to see the other way to run lxqt in the browser

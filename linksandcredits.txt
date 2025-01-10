@@ -1,3 +1,4 @@
 https://jasonmurray.org/posts/2021/x11vnc/
 https://linuxconfig.org/vnc-server-on-ubuntu-20-04-focal-fossa-linux # Tasksel
-https://www.server-world.info/en/note?os=Ubuntu_22.04&p=desktop&f=8 # Websockify Setup
+https://www.server-world.info/en/note?os=Ubuntu_22.04&p=desktop&f=8 # Used for the Websockify Setup
+https://siterobot.io/en/blog/how-to-install-kde-environment-and-vnc-remote-desktop-connection-to-ubuntu-1404-linux-server-24 # Link Used for the Lubuntu Desktop Setup
