@@ -76,6 +76,9 @@ websockify -D --web=/usr/share/novnc/ --cert=/home/ubuntu/novnc.pem 6080 localho
 go to `https://localhost:5901` novnc
 
 # Running Lxqt using X11VNC Headless
+## Quick Start
+curl -fsSL https://bit.ly/lxqtnovnc | bash
+## Tutorial
 ### Updating your system
 ```bash
 sudo apt update
