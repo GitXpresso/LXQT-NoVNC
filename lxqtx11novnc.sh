@@ -1,3 +1,6 @@
+echo "cloning gitxpresso/linux-novnc in home directory in order https certificate work properly for the websockify server"
+cd ~/
+git clone https://github.com/gitxpresso/linux-novnc
 echo "Updating Your System"
 sudo apt update
 echo "installing lxqt novnc xfvb openbix websockify dialog tigervnc-viewer tigervnc-standalone-server"
