@@ -14,7 +14,7 @@ echo "${BBlack}installing lxqt novnc xfvb openbix websockify dialog tigervnc-vie
 sudo apt install lxqt x11vnc xvfb openbox websockify novnc dialog tigervnc-standalone-server tigervnc-viewer -y
 echo "starting the server"
 vncserver -SecurityTypes none  --I-KNOW-THIS-IS-INSECURE  -localhost no :0
-websockify -D --web=/usr/share/novnc/ --cert=/home/linux-novnc/novnc.pem 6080 localhost:5900
+websockify -D --web=/usr/share/novnc/ --cert=~/linux-novnc/novnc.pem 6080 localhost:5900
 ssh -L 5900:localhost:5900 192.168.86.5 "x11vnc -create -env FD_PROG=/usr/bin/startlxqt -nopw -listen 127.0.0.1 -forever"
 echo "Vnc Server Started"
 echo "Go To ${BYellow}https://localhost:6080${No_Color}In your browser to access the VNC Server"
